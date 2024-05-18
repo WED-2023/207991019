@@ -1,193 +1,278 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Your Website</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 </head>
 <body>
-<div id="menu">
-<li><a href="#about">About Me</a></li>
-<li><a href="#photos">My Photos</a></li>
-<li><a href="#playlist">My Playlist</a></li>
-<li><a href="#like">Like</a></li>
-<li><a href="#qrcoder">QR code</a></li>
-<li><a href="#spa">Q&A</a></li>
-<li><a href="#contact">Contact Me</a></li>
-</div>
-		  
-<section id="about" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-about me
-<br/>
-<br/>
-<br/>
-</section>
+  <header>
+    <div class="container">
+        <div class="logo">
+          <img src="https://s.yimg.com/ny/api/res/1.2/vLE1U5zJ2.9XSdR9obeX7A--/YXBwaWQ9aGlnaGxhbmRlcjt3PTY0MDtoPTg1Mw--/https://media.zenfs.com/en/insidermonkey.com/3a9b01d5874d8162423aeac783e84288" alt="" width="60px" height="60px">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a style="color: white">|</a></li>
+                <li><a href="#photos">My Photos</a></li>
+                <li><a style="color: white">|</a></li>
+                <li><a href="#playlist">My Playlist</a></li>
+                <li><a style="color: white">|</a></li>
+                <li><a href="#like">Like</a></li>
+                <li><a style="color: white">|</a></li>
+                <li><a href="#qrcoder">QR Code</a></li>
+                <li><a style="color: white">|</a></li>
+                <li><a href="#spa">Q&A</a></li>
+                <li><a style="color: white">|</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+            </ul>
+        </nav>
+    </div>
+  </header>
+  <main>
+      <section id="about">
+          <h2>About Me</h2>
+          <!-- Your content here -->
 
-<section id="photos" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-my photos
-<br/>
-<br/>
-<br/>
-</section>
+        <div class="content">
+          <p>Warren Edward Buffett (born August 30, 1930) is an American businessman, investor, and philanthropist who currently serves as the co-founder, chairman and CEO of Berkshire Hathaway. As a result of his investment success, Buffett is one of the best-known investors in the world. As of April 2024, he had a net worth of $139 billion, making him the ninth-richest person in the world.
+            Buffett was born in Omaha, Nebraska. The son of US congressman and businessman Howard Buffett, he developed an interest in business and investing during his youth. He entered the Wharton School of the University of Pennsylvania in 1947 before graduating from the University of Nebraska at 19. He went on to graduate from Columbia Business School, where he molded his investment philosophy around the concept of value investing pioneered by Benjamin Graham. He attended New York Institute of Finance to focus on his economics background and soon pursued a business career.
+            He later began various business ventures and investment partnerships, including one with Graham. He created Buffett Partnership Ltd. in 1956 and his investment firm eventually acquired a textile manufacturing firm, Berkshire Hathaway, assuming its name to create a diversified holding company. Buffett emerged as the company's chairman and majority shareholder in 1970. In 1978, fellow investor and long-time business associate Charlie Munger joined Buffett as vice-chairman.
+            Investor Benjamin Graham was a major influential figure on the young Warren Buffett. 
+          </p>
+        </div>
+      </section>
 
-<section id="playlist" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-my playlist
-<br/>
-<br/>
-<br/>
-</section>
+      <section id="photos">
+          <h2>My Photos</h2>
+          <!-- Your photos here -->
+          <div class="content">
+            <img src="https://www.valuespreadsheet.com/images/blog/warren-buffett-timeline-history.png" alt="Buffett photos over the years">
+            <img src="https://static01.nyt.com/images/2017/01/30/arts/30BUFFET/30BUFFET-superJumbo.jpg" alt="">
+          </div>
+      </section>
 
-<section id="like" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-give me a like
-<br/>
-<br/>
-<br/>
-</section>
+      <section id="playlist">
+        <h2>My Playlist</h2>
+        <!-- Your content here -->
+        <div class="content">
+          <iframe width="500" height="315"
+            src="https://www.youtube.com/embed/tgbNymZ7vqY"frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+          </iframe>
+        </div>
+      </section>
+      
+      <section id="like">
+        <h2>Like</h2>
+        <div class="content">
+            <div class="like-container">
+              <p id="like-message">If you liked our site, show us support and press like!</p>
+              <button class="like-button" onclick="toggleLike()">
+                  <i id="like-icon" class="fa-solid fa-thumbs-up"></i>
+              </button>
+          </div>
+        </div>
+    </section>
+    
 
-<section id="qrcoder" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-scan my code
-<br/>
-<br/>
-<br/>
-</section>
+      <section id="qrcoder">
+        <h2>QR coder</h2>
+        <!-- Your content here -->
+        <div class="content">
+          <img src="https://qrfree.kaywa.com/?l=1&s=8&d=https%3A%2F%2Fwed-2023.github.io%2F207991019%2F" alt="">
+        </div>
+    </section>
 
-<section id="spa" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-ans
-<br/>
-<br/>
-<br/>
-</section>
+    <section id="spa">
+        <h2>Q&A</h2>
+        <!-- Your photos here -->
+        <div class="content">
+          <h1>Main Differences Between Web 1.0, Web 2.0, and Web 3.0</h1>
+          <br>
 
-<section id="contact" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-contact me
-<br/>
-<br/>
-<br/>
-</section>
+          <h3>User Interaction and Participation:</h3>
+          <br>
+          <ul>
+              <li><strong>Web 1.0:</strong> In Web 1.0, websites were static and primarily consisted of one-way communication.</li>
+              <li><strong>Web 2.0:</strong> Web 2.0 brought about dynamic and interactive websites where users became active participants.</li>
+              <li><strong>Web 3.0:</strong> Web 3.0 aims to further enhance user interaction and participation through decentralization and peer-to-peer networks.</li>
+          </ul>
+          <br>
+          <h3>User Interaction and Participation, use case: online music</h3>
+          <br>
+          <ul>
+            <li><strong>Web 1.0:</strong> A basic website displays lyrics and album information. Users can only read the content.</li>
+            <li><strong>Web 2.0:</strong> A streaming platform allows users to listen to music, create playlists, follow artists, and interact with other users.</li>
+            <li><strong>Web 3.0:</strong> A decentralized music platform lets artists upload music directly and get paid in cryptocurrency when users listen. Users can also invest in artists and have a say in platform decisions.</li>
+          </ul>
+          <br>
+
+          <h3>Data Ownership and Privacy:</h3>
+          <br>
+          <ul>
+              <li><strong>Web 1.0:</strong> In Web 1.0, data ownership and privacy were largely controlled by website owners.</li>
+              <li><strong>Web 2.0:</strong> With the rise of Web 2.0, concerns over data ownership and privacy grew as users started sharing more personal information.</li>
+              <li><strong>Web 3.0:</strong> Web 3.0 seeks to address the issues of data ownership and privacy by leveraging decentralized technologies.</li>
+          </ul>
+          <br>
+          <h3>Data Ownership and Privacy, use case: online shopping</h3>
+          <br>
+          <ul>
+              <li><strong>Web 1.0:</strong> You buy a product, the website keeps your data. You have no control.</li>
+              <li><strong>Web 2.0:</strong> You shop online, the platform tracks your behavior and uses your data for targeted ads.</li>
+              <li><strong>Web 3.0:</strong> You purchase an item on a decentralized marketplace. Your data is yours, and you decide who to share it with.</li>
+          </ul>
+          <br>  
+          <h3>Trust and Security:</h3>
+          <br>  
+          <ul>
+              <li><strong>Web 1.0:</strong> Trust and security were primarily based on centralized authorities.</li>
+              <li><strong>Web 2.0:</strong> As the scale and complexity of online interactions increased in Web 2.0, so did concerns about trust and security.</li>
+              <li><strong>Web 3.0:</strong> Web 3.0 aims to enhance trust and security through decentralized consensus mechanisms and cryptographic protocols.</li>
+          </ul>
+          <br>
+          <h3>Trust and Security, use case: financial transactions</h3>
+          <br>
+          <ul>
+              <li><strong>Web 1.0:</strong> You trust the online merchant to secure your credit card information.</li>
+              <li><strong>Web 2.0:</strong> You use PayPal, trusting their platform security and reputation.</li>
+              <li><strong>Web 3.0:</strong> You swap crypto on a decentralized exchange, trusting the blockchain's secure code and network consensus.</li>
+          </ul>
+        </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <div class="content">
+        <div class="form-container">
+          <form>
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <div class="input-container">
+                <input type="email" id="email" name="email" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="message">Message:</label>
+              <div class="input-container">
+                <div class="message-wrapper">
+                  <textarea id="message" name="message" rows="4" cols="50" required></textarea>
+                  <div class="emoji-dropdown">
+                    <span class="emoji-face" onclick="toggleEmojiMenu()">😊</span>
+                    <div class="emoji-dropdown-content" id="emojiMenu">
+                      <button type="button" onclick="addEmoji('🙂')">🙂</button>
+                      <button type="button" onclick="addEmoji('😊')">😊</button>
+                      <button type="button" onclick="addEmoji('😎')">😎</button>
+                      <button type="button" onclick="addEmoji('😍')">😍</button>
+                      <button type="button" onclick="addEmoji('😂')">😂</button>
+                      <button type="button" onclick="addEmoji('🤔')">🤔</button>
+                      <button type="button" onclick="addEmoji('👍')">👍</button>
+                      <button type="button" onclick="addEmoji('🙌')">🙌</button>
+                      <button type="button" onclick="addEmoji('❤️')">❤️</button>
+                      <button type="button" onclick="addEmoji('🎉')">🎉</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button type="submit" onclick="sendEmail()">Send</button>
+          </form>
+        </div>
+        <h3>Feel free to drop us a message with any questions or feedback! 📧</h3>
+      </div>
+    </section>>
+  
+  
+
+  </main>
+  <script>
+    $(document).ready(function() {
+        // Smooth Scrolling
+        $('a[href^="#"]').on('click', function(e) {
+            e.preventDefault();
+            var target = this.hash;
+            var $target = $(target);
+
+            if ($target.length) {
+                $('html, body').animate({
+                    scrollTop: $target.offset().top
+                }, 800);
+            }
+        });
+    });
+    
+    function sendEmail() {
+        var email = document.getElementById("email").value;
+        var message = document.getElementById("message").value;
+        var subject = "Contact Form Submission";
+        var recipientEmail = "ronohayon27@gmail.com"; // Set the recipient email here
+
+        // Copy the message to clipboard (if supported by the browser)
+        if (navigator.clipboard && window.isSecureContext) {
+            navigator.clipboard.writeText(message).then(function() {
+
+                // Use a mailto link to open Outlook with pre-filled information
+                var mailtoLink = "mailto:" + encodeURIComponent(recipientEmail)
+                    + "?subject=" + encodeURIComponent(subject)
+                    + "&body=" + encodeURIComponent(message);
+
+                window.location.href = mailtoLink; // This opens Outlook
+
+            }, function() {
+                alert("Failed to copy message to clipboard. Please copy it manually.");
+            });
+        } else {
+            alert("Clipboard access is not available in your browser.");
+        }
+    }
 
 
-<script type="text/javascript">
-$(function(){
-  $("#nav a").click(function(e){
-    e.preventDefault();
-    $('html,body').scrollTo(this.hash,this.hash); 
-  });
-});
+    function toggleEmojiMenu(event) {
+        var emojiMenu = document.getElementById("emojiMenu");
+        if (emojiMenu.style.display === "block") {
+            emojiMenu.style.display = "none";
+        } else {
+            emojiMenu.style.display = "block";
+        }
+        event.stopPropagation(); // Prevent event bubbling
+    }
+
+    function addEmoji(emoji) {
+        var messageField = document.getElementById("message");
+        messageField.value += emoji;
+        toggleEmojiMenu(event); // Hide emoji menu after selecting an emoji
+        event.preventDefault(); // Prevent default behavior of the click event
+    }
+    // Like Button Functionality
+    let isLiked = false;
+    let likeCount = 0;
+
+    document.addEventListener("DOMContentLoaded", function() {
+        const likeButton = document.querySelector(".like-button");
+
+        likeButton.addEventListener("click", toggleLike); // Add event listener for click
+
+        
+
+        function toggleLike() {
+          const likeIcon = document.getElementById("like-icon");
+          const likeMessage = document.getElementById("like-message");
+
+          if (!isLiked) {
+              likeIcon.classList.add("liked");
+              likeMessage.textContent = "Thank you for liking our site!";
+          } else {
+              likeIcon.classList.remove("liked");
+              likeMessage.textContent = "If you liked our site, show us support and press like!";
+          }
+
+          isLiked = !isLiked;
+      }
+    });
 </script>
-<script type="text/javascript">
- $(document).scroll(function() {
-    $('#menu').toggle($(this).scrollTop()>1000)
- });​
- </script>
+
+
 </body>
 </html>

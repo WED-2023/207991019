@@ -1,7 +1,399 @@
-#menu
-{
-	position: fixed;
-	width: 100%;
-	height: 35px;
-	background: white;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
+body {
+    font-family: Arial, sans-serif;
+    padding-top: 60px; /* Add padding to body to prevent content from being covered by the fixed header */
+}
+
+header {
+    background-color: #0e9ab9; 
+    color: #fff;
+    padding: 10px 0;        /* Removed horizontal padding */
+    display: flex;          
+    align-items: center;   
+    position: fixed;      
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100; 
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 15px;   /* Add left margin to the logo */
+}
+
+.container {
+    background-color: #0e9ab9; 
+    color: #fff;
+    display: flex;          
+    align-items: center;   
+    position: fixed;      
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100; 
+}
+
+nav {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: flex-end;   /* Align the nav to the right */
+    align-items: center;
+    background-color: transparent; /* Make the nav background transparent */
+    position: relative;
+    z-index: 1;
+
+}
+nav ul li a:hover{
+    color: yellow;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    height: 50%;
+    margin: 0;
+    padding: 0;
+    margin-right: 300px; /* Add right margin to the menu */
+}
+
+nav ul li {
+    padding: 0 15px; 
+}
+
+nav ul li a {
+    text-decoration: none; /* Remove underline */
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: white; /* Set text color to white */
+    text-shadow: 
+        -1px -1px 0 #999,  
+         1px -1px 0 #999,
+        -1px  1px 0 #999,
+         1px  1px 0 #999; /* Add greyish outline effect */
+}
+.split{
+    padding: 20px;
+  text-align: center; /* Center align the text */
+  position: relative; /* For positioning the pseudo-element */
+  margin-bottom: 30px; /* Add this line */
+}
+/* Create the blue bar using a pseudo-element */
+.split::before {
+    content: ""; /* Empty content is required */
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 5px; /* Adjust the height of the blue bar */
+    background-color: #00b0f0; /* Blue color */
+    z-index: 1; /* Place it above the section's content */
+    transform: translateY(-50%); /* Center the bar vertically */
+  }
+section {
+  padding: 20px;
+  text-align: center; /* Center align the text */
+  position: relative; /* For positioning the pseudo-element */
+  margin-bottom: 30px; 
+}
+
+/* Create the blue bar using a pseudo-element */
+section::before {
+  content: ""; /* Empty content is required */
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 5px; /* Adjust the height of the blue bar */
+  background-color: #00b0f0; /* Blue color */
+  z-index: 1; /* Place it above the section's content */
+  transform: translateY(-50%); /* Center the bar vertically */
+}
+
+section h2 {
+  margin: 0;          /* Remove default margins */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Center the text perfectly */
+  background-color: #fff; /* White background for the text */
+  padding: 0 10px;  /* Add some padding around the text */
+  z-index: 1;      /* Ensure the text is above the blue bar */
+}
+
+section .content {
+    top: 55%;
+    position: relative;
+    z-index: 2;
+    display: inline-block; 
+    padding: 20px;
+    background-color: #fff;
+    margin-bottom: 40px;
+
+}
+
+#about {    
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Adjust the minmax values as needed */
+    background-color: #ffffff;
+}
+
+#photos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Adjust the minmax values as needed */
+    grid-gap: 20px; /* Adjust the gap between images */
+    justify-content: center;
+  }
+
+#playlist {
+    display: grid;
+    background-color: #ffffff;
+}
+
+#like {
+    display: grid;
+    background-color: #ffffff;
+    height: 300px;
+    line-height: 20px;
+}
+#qrcoder {
+    display: grid;
+    background-color: #ffffff;
+    margin-bottom: -10%;
+}
+
+#spa {
+    display: grid;
+    background-color: #ffffff;
+    margin-bottom: 15%;
+}
+
+#contact {
+    margin-top: 20px;
+    display: grid;
+    background-color: #ffffff;
+    height: 300px;
+    line-height: 20px;
+}
+
+#spa ul{
+    text-align: justify;
+    padding-left: 30%;
+}
+#spa ul li{
+    text-align: justify;
+    padding-right: 20%;
+}
+#spa h3{
+    text-align: match-parent;
+}
+#spa h1{
+    text-align: match-parent;
+}
+
+#contact h3{
+    padding-top: 10px;
+}
+section .content p {
+    text-align: justify; /* Justify the text */
+    line-height: 1.6; /* Increase line spacing for better readability */
+    font-size: 16px; /* Adjust font size as needed */
+    max-width: 1000px; /* Set a maximum width for the paragraph */
+    margin: 0 auto; /* Center the paragraph horizontally */
+  }
+
+  #photos img {
+    width: 400px; /* Set the desired width in pixels */
+    height: 300px; /* Set the desired height in pixels */
+    display: inline;
+    margin: 0 auto;
+    border: 2px solid #ddd; /* Add a border */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add a shadow */
+}
+
+  
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    nav ul li {
+        margin-right: 0;
+        margin-bottom: 5px;
+    }
+}
+
+.message-wrapper {
+    display: flex;
+    align-items: center;
+  }
+  
+  .message-container {
+    flex: 1;
+  }
+  
+  .emoji-dropdown {
+    margin-left: 10px;
+    position: relative;
+  }
+  
+  .emoji-dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: lightblue;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 5px;
+    padding: 5px;
+    top: 100%;
+    right: 0;
+  }
+
+
+.emoji-face {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.emoji-dropdown-content button {
+    background: lightblue;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    margin: 2px;
+    padding: 0;
+}
+
+.emoji-dropdown-content button:hover {
+    transform: scale(1.1);
+}
+
+.emoji-dropdown:hover .emoji-dropdown-content {
+    display: block;
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+}
+
+input,
+textarea {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    flex: 1; /* Take remaining space */
+}
+
+.form-container {
+    max-width: 600px;      /* Adjust as needed for your desired width */
+    margin: 0 auto;        /* Center the form horizontally */
+    padding: 20px;         /* Add padding for spacing */
+    background-color: #f5f5f5; /* Optional background color */
+    border-radius: 8px;    /* Optional rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional subtle shadow */
+}
+
+.form-group {
+    display: flex;          /* Use flexbox for layout */
+    margin-bottom: 20px;
+    align-items: flex-start;
+}
+
+label {
+    width: 80px;            /* Adjust as needed */
+    margin-right: 10px;
+    text-align: right;     /* Align labels to the right */
+}
+
+input[type="email"],
+textarea {
+    width: calc(100%); /* Calculate width to fill remaining space */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;  /* Include padding and border in element's total width and height */
+}
+
+textarea {
+    resize: vertical;      /* Allow vertical resizing only */
+    min-height: 100px;     /* Set a minimum height */
+}
+
+button[type="submit"] {
+    background-color: #0e9ab9; /* Match header color */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    align-self: flex-end;   /* Align button to the right */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .form-container {
+        max-width: 90%;   /* Make the form narrower on smaller screens */
+    }
+
+    label {
+        text-align: left; /* Align labels to the left on smaller screens */
+    }
+}
+
+
+.like-container {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3%;
+}
+
+.like-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    align-items: center;
+    margin-right: 10px;
+}
+
+#like-message {
+    margin-left: 40%;
+    font-size: 18px;
+    margin-bottom: 10px; /* Add some space above the thumbs up */
+    font-family: Arial, sans-serif; /* Use Arial font */
+    color: #333; /* Set text color to dark gray */
+    font-weight: bold; /* Make text bold */
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2); /* Add subtle text shadow */
+}
+
+.like-button .fa-thumbs-up {
+    font-size: 45px;
+    color: #666; 
+    transition: color 0.3s ease, transform 0.3s ease; /* Smoother transition with easing */
+}
+
+.like-button .liked {
+    color: #007bff;
+    transform: scale(1.2);
+}
+
+
