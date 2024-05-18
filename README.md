@@ -5,5 +5,6 @@ about the "contact me" section, the action of send will open the mail and try to
 
 
 
-ID: 207991019
-Link: [mysite]https://wed-2023.github.io/207991019
+ID: 207991019.
+
+Link: https://wed-2023.github.io/207991019
